@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nos débuts magiques</title>
+  <style>
+    :root {
+      --rose: #ff69b4;
+      --noir: #2a2a2a;
+      --blanc: #ffffff;
+      --border: 2px dashed #ff69b4;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff5f9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: 'Parisienne', cursive;
+      color: var(--rose);
+      text-align: center;
+      font-size: 2.8rem;
+      margin: 2rem 0;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 20px;
+    }
+
+    .image-card {
+      position: relative;
+      border: var(--border);
+      border-radius: 15px;
+      padding: 15px;
+      background: var(--blanc);
+      transition: transform 0.3s;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .image-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .image-number {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: var(--rose);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.9rem;
+    }
+
+    .back-btn {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .back-btn a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 25px;
+      background: var(--rose);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background 0.3s;
+    }
+
+    .back-btn a:hover {
+      background: #ff1493;
+    }
+
+    @media (max-width: 768px) {
+      .image-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-btn">
+      <a href="index.html">← Retour à notre histoire</a>
+    </div>
+
+    <h1>Nos premiers instants inoubliables</h1>
+  <p> Dès le début, tout s'annoncait radieux entre nous, nous 2 savaient ce que nou voulions et pourquoi le profil de chacun correspondait à la personne que nous recherchions pendant des années,
+Et nous avons décidé ensemble de tout, de la manière que nous voulions avancé vers notre objectif commun,
+de la façon que nous allions nous aimer, pour arriver jusqu'à notre famille, tout était parfait, tu es devenu ma compagne, et moi je suis devenu ton chéri. Ainsi Dieu et la vie nous a réunis.
+  </p>
+    <div class="image-grid">
+      <!-- Image 1 -->
+      <div class="image-card">
+        <div class="image-number">Souvenir #1</div>
+        <img src="IMG1.png" alt="Notre premier échange" onerror="this.style.display='none'">
+      </div>
+
+      <!-- Image 2 -->
+      <div class="image-card">
+        <div class="image-number">Souvenir #2</div>
+        <img src="IMG2.png" alt="Première rencontre" onerror="this.style.display='none'">
+      </div>
+
+      <!-- Image 3 -->
+      <div class="image-card">
+        <div class="image-number">Souvenir #3</div>
+        <img src="IMG3.png" alt="Confidences" onerror="this.style.display='none'">
+      </div>
+
+      <!-- Image 4 -->
+      <div class="image-card">
+        <div class="image-number">Souvenir #4</div>
+        <img src="IMG4.png" alt="Projets communs" onerror="this.style.display='none'">
+      </div>
+
+      <!-- Image 5 -->
+      <div class="image-card">
+        <div class="image-number">Souvenir #5</div>
+        <img src="IMG5.png" alt="Rires partagés" onerror="this.style.display='none'">
+      </div>
+
+      <!-- Image 6 -->
+      <div class="image-card">
+        <div class="image-number">Souvenir #6</div>
+        <img src="IMG6.png" alt="Promesses" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+  <h2>Merci !</h2>
+</body>
+</html>

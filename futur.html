@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Notre Futur</title>
+  <style>
+    :root {
+      --rose: #ff69b4;
+      --noir: #2a2a2a;
+      --blanc: #ffffff;
+      --border: 2px dashed #ff69b4;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff5f9;
+      color: var(--noir);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      background: var(--blanc);
+      z-index: 1000;
+      border-bottom: var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-title {
+      font-family: 'Parisienne', cursive;
+      font-size: 2.2rem;
+      color: var(--rose);
+    }
+
+    .back-button {
+      text-align: center;
+      margin: 5rem 0 2rem 0;
+    }
+
+    .back-button a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 25px;
+      background: var(--rose);
+      color: var(--blanc);
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background 0.3s ease;
+    }
+
+    .back-button a::before {
+      content: '←';
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+
+    .back-button a:hover {
+      background: #ff1493;
+    }
+
+    .future-content {
+      text-align: center;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-family: 'Parisienne', cursive;
+      color: var(--rose);
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .empty-space {
+      border: var(--border);
+      border-radius: 15px;
+      padding: 3rem;
+      margin: 3rem 0;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(255,105,180,0.05),
+        rgba(255,105,180,0.05) 10px,
+        rgba(255,255,255,0.1) 10px,
+        rgba(255,255,255,0.1) 20px
+      );
+      font-style: italic;
+      color: var(--rose);
+    }
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-title">Notre Futur</div>
+  </header>
+
+  <div class="container">
+    <div class="back-button">
+      <a href="index.html">Retour à Notre Histoire</a>
+    </div>
+
+    <div class="future-content">
+      <h1>Bienvenue dans Notre Futur</h1>
+      
+      <div class="empty-space">
+        <div>
+          <p>Cette page est encore vierge...</p>
+          <p style="max-width: 600px; margin: 0 auto 2rem auto;">
+        Bien sûr il n'y a rien ici...<br>
+        Car c'est à nous, toi et moi, de décider<br>
+        s'il y aura un futur entre nous.<br><br>
+        De ma part, je suis prêt à écrire cette page avec toi.
+      </p>
+          <p>❤ À nous de la remplir ❤</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

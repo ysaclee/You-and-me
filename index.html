@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Amour Éternel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">Mr & Mrs</div>
+        <div class="header-right">
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+            <nav class="menu-content">
+                <a href="#accueil" onclick="scrollToSection('accueil')">Accueil</a>
+                <a href="#Toi-et-Moi" onclick="scrollToSection('Toi-et-Moi')">Toi et Moi</a>
+                <a href="#Toi-et-Moi" onclick="scrollToSection('Toi-et-Moi')">Souvenirs</a>
+                <a href="#contact" onclick="scrollToSection('contact')">Notre Promesse</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="accueil" class="active">
+        <div class="hero-text">
+            <h1 class="romantic-title">Notre Histoire d'Amour</h1>
+            <p>Bienvenue dans le récit de notre romance éternelle, ma chère Anne Flore.</p>
+            <p>Chaque moment avec toi est une page précieuse de ce livre qui n'aura jamais de fin...</p>
+        </div>
+        <img src="Annie.png" class="hero-image" alt="Notre histoire">
+    </section>
+
+    <section id="Toi-et-Moi" class="section">
+        <h2 class="section-title">Notre Voyage</h2>
+        <div class="timeline-container">
+            <div class="time-box">
+                <div class="time-content">
+                    <h3>Notre Passé</h3>
+                    <p>Les racines de notre amour, là où tout a commencé...</p>
+                    <a href="passe.html" class="time-btn">
+                        Voir nos débuts
+                        <span class="heart-arrow"> →</span>
+                    </a>
+                </div>
+            </div>
+            <div class="time-box present">
+                <div class="time-content">
+                    <h3>Notre Présent</h3>
+                    <p>Ce moment précieux où nos vies ne font qu'une...</p>
+                    <a href="present.html" class="time-btn">
+                        Voir aujourd'hui
+                        <span class="heart-arrow"> →</span>
+                    </a>
+                </div>
+            </div>
+            <div class="time-box future">
+                <div class="time-content">
+                    <h3>Notre Futur</h3>
+                    <p>Les rêves que nous construirons ensemble...</p>
+                    <a href="futur.html" class="time-btn">
+                        Voir notre Futur
+                        <span class="heart-arrow"> →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="section">
+        <h2>Notre Galerie</h2>
+        <div class="image-gallery">
+            <div class="image-container">
+                <div class="image-number"> ♥ </div>
+                <img src="Annie 1.jpg" alt="Beauté">
+            </div>
+            <div class="image-container">
+                <div class="image-number"> ♥ </div>
+                <img src="Isaac 1.jpg" alt="Loyal">
+            </div>
+            <div class="image-container">
+                <div class="image-number"> ♥ </div>
+                <img src="Annie 2.jpg" alt="Douceur">
+            </div>
+            <div class="image-container">
+                <div class="image-number"> ♥ </div>
+                <img src="Isaac 3.jpg" alt="Calme">
+            </div>
+            <div class="image-container">
+                <div class="image-number"> ♥ </div>
+                <img src="Annie 3.jpg" alt="Trésor">
+            </div>
+        </div>
+    </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Notre Promesse</h2>
+    
+    <div class="contact-container">
+        <p class="romantic-text">"Je te choisis aujourd'hui, demain, et pour toutes les saisons de notre éternité..."</p>
+        
+        <form id="contactForm" action="https://formspree.io/f/xvgkbnye" method="POST">
+            <div class="form-group">
+                <label for="name">Nos deux noms unis</label>
+                <input type="text" id="name" name="name" placeholder="Écris nos noms entrelacés" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Notre sanctuaire secret</label>
+                <input type="email" id="email" name="email" placeholder="Où nos cœurs se retrouvent" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Notre serment</label>
+                <textarea id="message" name="message" rows="5" 
+                    placeholder="Écris ici les promesses que nos âmes chuchotent..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-envoyer">
+                Sceller notre Destin 
+                <span style="margin-left: 8px;">❤</span>
+            </button>
+        </form>
+    </div>
+</section>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-content');
+            menu.classList.toggle('active');
+        }
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            toggleMenu();
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.25 });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

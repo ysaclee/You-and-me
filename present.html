@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Notre présent</title>
+  <style>
+    :root {
+      --rose: #ff69b4;
+      --noir: #2a2a2a;
+      --blanc: #ffffff;
+      --border: 2px dashed #ff69b4;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff5f9;
+      color: var(--noir);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: 'Parisienne', cursive;
+      color: var(--rose);
+      text-align: center;
+      font-size: 2.8rem;
+      margin: 2rem 0;
+      text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.2);
+    }
+
+    h2, h3 {
+      color: var(--rose);
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 1.5rem auto;
+      padding: 0 20px;
+      text-align: justify;
+      font-size: 1.1rem;
+    }
+
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 20px;
+    }
+
+    .image-container {
+      position: relative;
+      border: var(--border);
+      border-radius: 15px;
+      padding: 10px;
+      background: var(--blanc);
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .image-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(255, 105, 180, 0.2);
+    }
+
+    .image-number {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: var(--rose);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .back-button {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .back-button a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 25px;
+      background: var(--rose);
+      color: var(--blanc);
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background 0.3s ease;
+    }
+
+    .back-button a::before {
+      content: '←';
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+
+    .back-button a:hover {
+      background: #ff1493;
+    }
+
+    .merci-box {
+      text-align: center;
+      padding: 2rem;
+      margin: 3rem auto;
+      border: var(--border);
+      border-radius: 15px;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .image-gallery {
+        grid-template-columns: 1fr;
+      }
+      
+      img {
+        height: 250px;
+      }
+    }
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-button">
+      <a href="index.html">Retour à Notre Histoire</a>
+    </div>
+
+    <h1>Soyez la Bienvenue encore une fois Annie</h1>
+
+  <p> Maintenant après de beaux moments passé l'un à côtés de l'autre nous nous sommes connus veritablement, tu as vu mes défauts,
+    tu as vu les côtés sombre que j'ai, ainsi que pour moi, mais malgré nous avons passé 1 année ensembles , il y a eu des fou rires, des sourires, des pleures, des moment où on se disputait même pour rien,
+    il y a eu des moments où j'ai mal agis, aussi des moments où j'ai été abscent dans ta vie.
+    Je peux pas dire que ce n'est que du négatif, Notre amour c'est aussi le fait que tu ne peux pas passé des moments sans prendre nouvel de moi, c'est aussi le fait que je suis toujours en mode jalousie 
+    même si j'essaie de le cacher. Mais le plus important aussi c'est notre volonté à aimer et à pardonner pour le bien et l'avenir de notre couple.'
+  </p>
+    
+    <h2>Visualise un peu nos instants présents</h2>
+
+    <div class="image-gallery">
+      <div class="image-container">
+        <div class="image-number">Moment #1</div>
+        <img src="IMAG01.png" alt="Moment présent 1">
+      </div>
+      <div class="image-container">
+        <div class="image-number">Moment #2</div>
+        <img src="IMAG 1.png" alt="Moment présent 2">
+      </div>
+      <div class="image-container">
+        <div class="image-number">Moment #3</div>
+        <img src="IMAG 2.png" alt="Moment présent 3">
+      </div>
+      <div class="image-container">
+        <div class="image-number">Moment #4</div>
+        <img src="IMAG 3.png" alt="Moment présent 4">
+      </div>
+      <div class="image-container">
+        <div class="image-number">Moment #5</div>
+        <img src="IMAG 4.png" alt="Moment présent 5">
+      </div>
+      <div class="image-container">
+        <div class="image-number">Moment #6</div>
+        <img src="IMAG 5.png" alt="Moment présent 6">
+      </div>
+      <div class="image-container">
+        <div class="image-number">Moment #7</div>
+        <img src="IMAG 6.png" alt="Moment présent 7">
+      </div>
+      <div class="image-container">
+        <div class="image-number">Moment #8</div>
+        <img src="IMAG 7.png" alt="Moment présent 8">
+      </div>
+    </div>
+
+    <div class="merci-box">
+      <h3>MERCI !</h3>
+      <p>Pour chaque instant partagé, chaque sourire échangé, et pour cet amour qui grandit chaque jour.</p>
+    </div>
+  </div>
+</body>
+</html>
